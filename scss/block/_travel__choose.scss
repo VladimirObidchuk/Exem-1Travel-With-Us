@@ -1,0 +1,97 @@
+.travel {
+  &__step {
+    width: 100%;
+    height: 306px;
+    background-color: $bdreviews;
+    margin: -1px 0;
+    padding-top: 10px;
+  }
+
+  &__way {
+    width: 100%;
+    text-align: center;
+    margin: 3% 0 -2%;
+  }
+
+  &__footer {
+    z-index: 2;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__search {
+    @include icon__travel;
+    margin-right: 42px;
+  }
+  &__select {
+    @include icon__travel;
+    margin: 2px 0;
+  }
+
+  &__book {
+    @include icon__travel;
+    margin-left: 22px;
+  }
+}
+
+._icon-search {
+  font-size: 3.7rem;
+  color: $button;
+}
+
+._icon-check {
+  font-size: 4rem;
+  color: $red;
+}
+
+._icon-thumbs {
+  font-size: 4rem;
+  color: $blue;
+}
+@media (max-width: $xxl) {
+  .travel__way {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: $xl) {
+  .travel__way {
+    transform: scale(0.7);
+    margin: 3% 0 -3%;
+  }
+}
+@media (max-width: $lg) {
+  .line__footer img {
+    display: none;
+  }
+  .travel {
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10% 0 0;
+    }
+    &__icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    &__step {
+      height: 450px;
+    }
+    &__search {
+      margin-right: 0;
+    }
+    &__select {
+      margin: 30px 0;
+    }
+    &__book {
+      margin: 0 0 10px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.header {
+  &__reviews {
+    background: url("../img/BG.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+}
+.reviews {
+  &__name {
+    margin-left: 20px;
+  }
+  &__title {
+    @include Aleo_reg;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.03em;
+    color: $color;
+    text-align: center;
+    padding: 116px 0 0;
+  }
+  &__content {
+    padding-top: 54px;
+  }
+}
+.icon {
+  &__reviews {
+    height: 60%;
+    background: url("../img/ReviewPhoto.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+.content {
+  &__reviews {
+    width: 117%;
+    height: 60%;
+    background-color: #333333;
+    padding: 48px 35px 5px 63px;
+    margin: 0 0 227px 0;
+  }
+}
+.title {
+  &__reviews {
+    @include josefin_reg;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.02em;
+    color: $color;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+}
+.text {
+  &__reviews {
+    @include josefin_light;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.116em;
+    color: $color;
+  }
+  &__reviews span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: $xl) {
+  .content {
+    &__reviews {
+      width: 100%;
+      height: 60%;
+      padding: 20px 20px 5px 30px;
+      margin-bottom: 160px;
+    }
+  }
+  .icon {
+    &__reviews {
+      height: 60%;
+    }
+  }
+  .title {
+    &__reviews {
+      font-size: 1rem;
+      line-height: 1rem;
+      letter-spacing: 0.02em;
+      margin: 0 0 10px;
+    }
+  }
+  .text {
+    &__reviews {
+      font-size: 0.8rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+@media (max-width: $lg) {
+  .icon {
+    &__reviews {
+      height: 360px;
+      width: 100%;
+    }
+  }
+  .content {
+    &__reviews {
+      height: 80%;
+      padding: 40px 20px 5px 30px;
+      margin-bottom: 110px;
+    }
+  }
+  .title {
+    &__reviews {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.02em;
+      letter-spacing: 0.02em;
+      margin: 0 0 10px;
+    }
+  }
+  .text {
+    &__reviews {
+      font-size: 1rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.116em;
+    }
+  }
+  .reviews {
+    &__title {
+      padding: 70px 0 0;
+    }
+  }
+}

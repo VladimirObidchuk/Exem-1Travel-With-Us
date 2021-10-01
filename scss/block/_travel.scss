@@ -1,0 +1,43 @@
+.travel {
+  &__content {
+    background: url("../img/render-1477041_1280.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+}
+.block {
+  &__travel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 649px;
+    height: 344px;
+    background-color: rgba(35, 35, 35, 0.596);
+    margin: 223px 0px 120px 0;
+    padding-left: 32px;
+  }
+}
+@media (max-width: $xl) {
+  .block__travel {
+    height: 372px;
+    margin: 120px 0 120px 0;
+  }
+}
+@media (max-width: $lg) {
+  .block__travel {
+    height: 348px;
+    margin: 120px 0 120px 0;
+  }
+}
+@media (max-width: $md) {
+  .block__travel {
+    width: 520px;
+  }
+}
+@media (max-width: $sm) {
+  .block__travel {
+    width: 510px;
+    height: 376px;
+    margin: 120px 0 120px 0;
+  }
+}

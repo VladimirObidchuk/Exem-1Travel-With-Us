@@ -1,0 +1,190 @@
+.footer__menu {
+  width: 100%;
+  left: 0px;
+  background: $footer;
+  position: sticky;
+}
+.row {
+  --bs-gutter-x: 0;
+}
+.footer__logo {
+  text-align: center;
+  width: 97%;
+  color: $color;
+  margin: 2% 0 1%;
+}
+.footer__logo {
+  @include josefin_bolt;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.menu {
+  width: 97%;
+  margin: 3% 0;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-left: 232px;
+  }
+
+  &__item {
+    display: flex;
+    @include Aleo_reg;
+    font-size: 0.83rem;
+    line-height: 1rem;
+    letter-spacing: 0.126em;
+    margin: 0 12px 0;
+  }
+
+  &__link {
+    color: $color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.burger {
+  display: none;
+  width: 50px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+  left: 85%;
+  bottom: 26px;
+  z-index: 3;
+
+  &__item,
+  &__item::before,
+  &__item::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+  }
+  &__item::before {
+    bottom: 15px;
+  }
+  &__item::after {
+    top: 15px;
+  }
+}
+.mobile {
+  background: rgba($color: $menubg, $alpha: 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: block;
+  transition: all 0.3s;
+  pointer-events: none;
+  transform: translateY(-100%);
+  margin: 0 auto;
+  .menu-open & {
+    transform: translateX(0%);
+    pointer-events: initial;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 3% 26%;
+  }
+  &__title span {
+    font-size: 2.5rem;
+    color: $color;
+    margin: 0px 7% 0 18%;
+    cursor: pointer;
+  }
+  &__text {
+    @include josefin_bolt;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color;
+  }
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin: 1% 0;
+  }
+
+  &__link {
+    @include Aleo_reg;
+    font-size: 1.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color;
+  }
+  .burger {
+    cursor: pointer;
+    display: block;
+    &__mobile {
+      width: 10%;
+      position: relative;
+      left: 85%;
+      top: 20px;
+      z-index: 2;
+    }
+  }
+}
+@media (max-width: $xxl) {
+  .menu {
+    &__list {
+      margin-left: 146px;
+    }
+  }
+}
+@media (max-width: $xl) {
+  .menu {
+    &__item {
+      font-size: 0.9rem;
+      line-height: 1rem;
+      letter-spacing: 0.01em;
+    }
+    &__list {
+      margin-left: 14px;
+    }
+  }
+}
+@media (max-width: $lg) {
+  .menu {
+    &__item {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      letter-spacing: 0.1em;
+      margin: 0px 15px 0;
+    }
+    &__list {
+      margin-left: 30px;
+      justify-content: center;
+    }
+  }
+  .footer__logo {
+    margin: 15px 0 0;
+  }
+  .menu {
+    margin: 34px 0;
+  }
+}
+@media (max-width: $md) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+  .footer__logo {
+    margin: 2% 0 0;
+  }
+}

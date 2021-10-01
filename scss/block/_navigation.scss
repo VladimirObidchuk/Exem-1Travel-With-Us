@@ -1,0 +1,113 @@
+.header {
+  background: url("../img/HeaderBackground.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28% 0 197px;
+  }
+  &__content {
+    text-align: center;
+    width: calc(90% - 40%);
+  }
+  .travel__name {
+    @include josefin_reg;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: $placeholder;
+    padding: 0 3% 0;
+    border: none;
+    outline: none;
+  }
+  .travel__name::placeholder {
+    @include josefin_reg;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: $placeholder;
+  }
+  &__title {
+    @include josefin_bolt;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    color: $color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    @include josefin_reg;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color;
+    letter-spacing: 0.31em;
+    margin-bottom: 47px;
+  }
+  &__third {
+    @include josefin_reg;
+    font-size: 0.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.15em;
+    color: $color;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color;
+  }
+  .text input {
+    width: 78%;
+    height: 98%;
+    border: none;
+    margin: 3% 0;
+  }
+  button {
+    background-color: $button;
+    color: $color;
+    @include Aleo_reg;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin: 1%;
+  }
+  ._icon-search {
+    font-size: 1.5rem;
+    color: $color;
+    padding: 0 7%;
+  }
+
+  .header__chevron {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: $color;
+    margin: 0px 0 9%;
+  }
+}
+@media (max-width: $lg) {
+  .header__content {
+    width: calc(90% - 30%);
+  }
+}
+@media (max-width: $md) {
+  .header__content {
+    width: 90%;
+    width: calc(90% - 10%);
+  }
+  .header button {
+    height: 80%;
+    line-height: 1.5rem;
+  }
+}

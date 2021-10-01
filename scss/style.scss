@@ -1,0 +1,104 @@
+::after,
+::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+body {
+  font-size: 16px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@import "./libs/font";
+@import "./libs/color";
+@import "../scss/libs/breakpoint";
+@import "../scss/block/navigation";
+@import "../scss/block/footer";
+@import "../scss/block/choose";
+@import "../scss/block/travel__choose";
+@import "../scss/block/travel";
+@import "../scss/block/travel1";
+@import "../scss/block/reviews";
+@import "../scss/block/contact";
+
+.block {
+  &__title {
+    @include josefin_light;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.1em;
+    color: $color;
+    padding-bottom: 13px;
+  }
+  &__subtitle {
+    @include josefin_reg;
+    font-size: 1.24rem;
+    line-height: 1.7rem;
+    color: #ffffff;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+  &__text {
+    @include josefin_light;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1em;
+    color: $color;
+    padding: 17px 17px 17px 0;
+  }
+}
+.choose {
+  &__submit {
+    width: 213px;
+    height: 60px;
+    margin-top: 7px;
+  }
+  &__book {
+    width: 100%;
+    height: 100%;
+    background-color: $button;
+    @include Aleo_reg;
+    font-size: 1.05rem;
+    line-height: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $color;
+    border: 1px solid $button;
+  }
+  &__book:hover {
+    transform: scale(1.1);
+  }
+}
+.travel__link {
+  text-decoration: none;
+  color: $color;
+  padding-top: 14px;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+input:not(.class) {
+  background: no-clip;
+}
+@media (max-width: $lg) {
+}
+@media (max-width: $sm) {
+  .block {
+    &__title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
