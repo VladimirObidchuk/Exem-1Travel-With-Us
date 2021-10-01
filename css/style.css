@@ -17,7 +17,7 @@ body {
 
 .header {
   background: url("../img/HeaderBackground.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
