@@ -70,3 +70,23 @@
     margin: 30px 0 0;
   }
 }
+@media (max-width: $md) {
+  .content__icon {
+    margin: 0;
+  }
+  .icon__img:only-child {
+    padding-right: 10px;
+  }
+  .icon__img img {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media (max-width: $sm) {
+  .content__icon {
+    margin: 0;
+  }
+  .icon__img:only-child {
+    padding-right: 10px;
+  }
+}
