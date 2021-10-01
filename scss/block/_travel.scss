@@ -1,6 +1,7 @@
 .travel {
   &__content {
-    background: url("../img/render-1477041_1280.png") center no-repeat;
+    background: url("../img/render-1477041_1280.png") no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
   }
@@ -26,18 +27,20 @@
 @media (max-width: $lg) {
   .block__travel {
     height: 348px;
-    margin: 120px 0 120px 0;
+    margin: 120px 0 120px 25px;
   }
 }
 @media (max-width: $md) {
   .block__travel {
-    width: 520px;
+    width: 100%;
+    margin: 120px 0 120px 0;
+    padding: 10px 0 0 25px;
   }
 }
 @media (max-width: $sm) {
   .block__travel {
     width: 80%;
     height: 415px;
-    margin: 100px 0 100px 0;
+    margin: 100px 0 100px 35px;
   }
 }
